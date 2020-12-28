@@ -1,0 +1,4 @@
+/**/options{  static = true;}/**/PARSER_BEGIN(parserGrammarsFile)package com.FITE.QBasicInterpreter.ParserFiles;/**/
+import java.io.FileInputStream;import java.io.BufferedInputStream;import com.FITE.QBasicInterpreter.ParseTreeNodeTypes.*;/**/
+public class parserGrammarsFile{  public static void main(String args []) throws Exception  {    FileInputStream file = new FileInputStream("QBasicCodeFile.txt");    BufferedInputStream stream = new BufferedInputStream(file);    parserGrammarsFile parser = new parserGrammarsFile(stream);  }}PARSER_END(parserGrammarsFile)/**/SKIP :{  " "| "\r"| "\t"| "\n"}/**/TOKEN : /* OPERATORS */{  < PLUS : "+" >| < MINUS : "-" >| < MULTIPLY : "*" >| < DIVIDE : "/" >}
+/**/
