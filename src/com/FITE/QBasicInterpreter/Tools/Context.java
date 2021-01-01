@@ -1,6 +1,8 @@
 package com.FITE.QBasicInterpreter.Tools;
 /**/
 import java.util.*;
+
+import com.FITE.QBasicInterpreter.Exception.RunTimeException;
 /**/
 public class Context implements Cloneable{
 	/**/

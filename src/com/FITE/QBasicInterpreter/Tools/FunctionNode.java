@@ -1,10 +1,11 @@
 package com.FITE.QBasicInterpreter.Tools;
+import com.FITE.QBasicInterpreter.Exception.ReturnException;
 /**/
 import com.FITE.QBasicInterpreter.ParseTreeNodeTypes.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 /**/
-public class FunctionNode extends BlockNode {
+public class FunctionNode extends RootParseTreeNode {
 	
 	private ArrayList<String> parIds = new ArrayList<>();
 	private ArrayList<String> parTypes = new ArrayList<>();

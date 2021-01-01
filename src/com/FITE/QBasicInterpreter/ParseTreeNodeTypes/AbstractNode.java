@@ -1,6 +1,6 @@
 package com.FITE.QBasicInterpreter.ParseTreeNodeTypes;
 /**/
-import com.FITE.QBasicInterpreter.Tools.*;
+import com.FITE.QBasicInterpreter.Tools.Context;
 import java.util.ArrayList;
 /**/
 public abstract class AbstractNode {

@@ -1,0 +1,3 @@
+PRINT "fpg"
+PRINT "123"
+PRINT "1a2an"
