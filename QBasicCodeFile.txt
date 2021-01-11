@@ -1,3 +1,10 @@
-PRINT "fpg"
-PRINT "123"
-PRINT "1a2an"
+a=0
+PRINT a 
+INPUT bb
+IF a>8 THEN
+PRINT a +5
+ENDIF
+PRINT bb
+FOR c = 1 TO 5
+PRINT c
+NEXT c

@@ -6,8 +6,6 @@ import com.FITE.QBasicInterpreter.Exception.RunTimeException;
 /**/
 public class Context implements Cloneable{
 	/**/
-	public static HashMap<String, FunctionNode> functionMap = new HashMap<>();
-	public static LinkedList<HashMap<String, FunctionNode>> privateFunctionMaps = new LinkedList<>();
 	private HashMap<String,Object> vars = new HashMap<>();
 	private Stack<HashMap<String, Object>> stack = new Stack<>();
 	/**/
