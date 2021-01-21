@@ -1,6 +1,5 @@
 package com.FITE.QBasicInterpreter.ParseTreeNodeTypes;
 
-import com.FITE.QBasicInterpreter.Exception.ReturnException;
 import com.FITE.QBasicInterpreter.Exception.RunTimeException;
 import com.FITE.QBasicInterpreter.Tools.Context;
 
@@ -44,14 +43,11 @@ public class AssignmentNode extends AbstractNode {
 	
 	@Override
 	public Object execute(Context context) throws Exception {
-		if(varId.equals("ret")) {
-			throw new ReturnException(this.childrenNode.get(0).execute(context));
-		}
+		
 		if(context.getVars().containsKey(varId)) {
 			Object b = context.getVars().get(varId);
 			if(b instanceof Double) {
 				double x = f(context);
-				double value = (double) b;
 				
 				context.getVars().put(varId, x);
 				
@@ -59,7 +55,6 @@ public class AssignmentNode extends AbstractNode {
 			}
 			if(b instanceof Integer) {
 				double x = f(context);
-				int value = (int) b;
 				context.getVars().put(varId, (int)x);
 			
 				return null;

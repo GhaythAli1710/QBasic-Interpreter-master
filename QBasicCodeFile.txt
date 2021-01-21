@@ -1,8 +1,8 @@
 a=0
-PRINT a 
+PRINT a
 INPUT bb
 IF a>8 THEN
-PRINT a +5
+PRINT a
 ENDIF
 PRINT bb
 FOR c = 1 TO 5
